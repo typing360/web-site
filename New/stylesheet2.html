@@ -93,8 +93,15 @@
             color: rgba(28, 17, 17, 0.825);
         }
 
+        button{
+            margin-top: 8px;
+            display: block;
+            padding: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+    
 
-       
+        }
         
     </style>
     
@@ -107,16 +114,39 @@
     </div>
 
 <div class="container">
-       <div class="box2">
-        
-<a href="stylesheet1.html"><button>stylesheet1</button></a>
-<a href="stylesheet2.html"><button>stylesheet2</button></a>
-<a href="stylesheet3.html"><button>stylesheet3</button></a>
-<a href="stylesheet4.html"><button>stylesheet4</button></a>
-<a href="No stylesheet.html"><button>No stylesheet</button></a>
+     <div class="box2">
+        <script>
+            function box2() {
+                window.location.href="stylesheet1.html";
+                
+            }
+             function box3() {
+                window.location.href="stylesheet2.html";
+                
+            }
+              function box4() {
+                window.location.href="stylesheet3.html";
+                
+            }
+              function box5() {
+                window.location.href="stylesheet4.html";
+                
+            }
+              function box1() {
+                window.location.href="No stylesheet.html";
+                
+            }
+            
+        </script>
+        <p id="demo">
+        <button onclick="box2()">stylesheet1</button>
+        <button onclick="box3()">stylesheet2</button>
+        <button onclick="box4()">stylesheet3</button>
+        <button onclick="box5()">stylesheet4</button>
+        <button onclick="box1()">No stylesheet</button>
+        </p>
+
     </div>
-
-
    
 
     <h2><strong>Same Page Different Stylesheets</strong></h2>
